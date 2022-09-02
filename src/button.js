@@ -9,15 +9,13 @@ const Button = () => {
 
   return (
     <Button
-      style={{ border: none, padding: "8px 12px", backgroundColor: blue }}
+      style={{ border: "none", padding: "8px 12px", backgroundColor: "blue" }}
       class="btn"
-      onClick:handleCounter
+      onClick={handleCounter}
     >
       Counter {counter}
     </Button>
   );
 };
 
-const root = ReactDOM.createRoot(document.querySelector("#root"));
-
-root.render(Button);
+export default Button;
