@@ -8,13 +8,17 @@ const Button = () => {
   }
 
   return (
-    <Button
-      style={{ border: "none", padding: "8px 12px", backgroundColor: "blue" }}
-      class="btn"
+    <button
+      style={{
+        padding: "12px 16px",
+        backgroundColor: "steelblue",
+        color: "#fff",
+      }}
+      className="btn"
       onClick={handleCounter}
     >
       Counter {counter}
-    </Button>
+    </button>
   );
 };
 
